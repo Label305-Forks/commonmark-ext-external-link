@@ -69,7 +69,7 @@ final class ExternalLinkProcessor
     {
         $link->data['external'] = true;
         $link->data['attributes'] = $link->getData('attributes', []);
-        $link->data['attributes']['rel'] = 'noopener noreferrer';
+        $link->data['attributes']['rel'] = 'noopener noreferrer nofollow';
 
         if ($openInNewWindow) {
             $link->data['attributes']['target'] = '_blank';
